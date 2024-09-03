@@ -1,0 +1,62 @@
+:root {
+    /* Minimalist white pallate */
+    --color1: #ffffff; /* Use as the primary background color for a clean and spacious feel*/
+    --color2: #f0f0f0; /* For subtle borders, dividers, or secondary background sections*/
+    --color3: #cccccc; /* For text, icons, or subtle highlights.*/
+    --color4: #333333; /* For primary text, ensuring good contrast and readability.*/
+    --color5: #007bff; /* A pop of color for links, buttons, or interactive elements*/
+    /* Warm white palettete */
+    --color6: #fdfdfd; /* Use as the primary background color for a cozy and inviting atmosphere.*/
+    --color7: #f7f7f7; /* For sections that need subtle differentiation.*/
+    --color8: #eaeaea; /* For borders and small text to maintain a soft contrast*/
+    --color9: #8b8b8b; /* For text, offering a warmer tone than pure black*/
+    --color10: #d2691e; /* For buttons or accents, adding warmth to the design.*/
+    /* Cool White Palette */
+    --color11: #fcfcfc; /* Use as the primary background color for a crisp, modern feel.*/
+    --color12: #efefef; /* For secondary backgrounds or subtle borders.*/
+    --color13: #d5d5d5; /* For text, ensuring it stands out without being too harsh.*/
+    --color14: #4d4d4d; /* For main text and headers, ensuring readability*/
+    --color15: #4682b4; /* For interactive elements like buttons or links, adding a modern touch.*/
+    /* Monochrome White Palette */
+    --color16: #ffffff; /* As the primary background*/
+    --color17: #fafafa; /* For sections that need slight separation from the main background.*/
+    --color18: #e5e5e5; /* For borders or subtle text.*/
+    --color19: #bfbfbf; /* For secondary text, icons, or subtle interactive elements.*/
+    --color20: #7a7a7a; /* For primary text and important elements.*/
+    /* White with Accent Colors */
+    --color21: #ffffff; /* Main background.*/
+    --color22: #f2f2f2; /* For secondary backgrounds or dividers.*/
+    --color23: #d9d9d9; /* For borders and minor text elements.*/
+    --color24: #595959; /* For primary text and headers.*/
+    --color25: #ff6f61; /* For accents, buttons, or links to add a vibrant contrast.*/
+    /* Classic White and Gray */
+    --color26: #ffffff; /* Background*/
+    --color27: #f7f7f7; /* Section backgrounds or borders*/
+    --color28: #e0e0e0; /* Text, icons, and subtle borders*/
+    --color29: #b0b0b0; /* Buttons, headings, and calls to action*/
+    /* Soft White and Warm Neutrals */
+    --color30: #fafafa; /* Background*/
+    --color31: #f0edee; /* Secondary background or cards*/
+    --color32: #c5c5c5; /* Text and borders*/
+    --color33: #a0a0a0; /* Buttons and interactive elements*/
+    /* Minimalist White and Blue */
+    --color34: #ffffff; /* Background*/
+    --color35: #f2f6fa; /* Section backgrounds*/
+    --color36: #dde4ea; /* Text and subtle borders*/
+    --color37: #4a90e2; /* Buttons, links, and icons*/
+    /* Elegant White and Beige */
+    --color38: #ffffff; /* Background*/
+    --color38: #fdfdfd; /* Section backgrounds*/
+    --color38: #ededed; /* Text and borders*/
+    --color38: #d4d4d4; /* Buttons and interactive elements*/
+    /* Contemporary White and Black */
+    --color38: #ffffff; /* Background*/
+    --color38: #f8f8f8; /* Section backgrounds*/
+    --color38: #333333; /* Text, headings, and icons*/
+    --color38: #000000; /* Bold buttons and key call-to-action elements*/
+    /* White with Earthy Accents */
+    --color38: #ffffff; /* Background*/
+    --color38: #f7f3f0; /* Section backgrounds*/
+    --color38: #d6cbbe; /* Text, borders, and icons*/
+    --color38: #8b6f47; /* Buttons and interactive elements*/
+}
