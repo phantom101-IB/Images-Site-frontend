@@ -12,7 +12,7 @@ const Navbar = () => {
     return <nav className="nav-bar">
         <div className="nav-bar-main">
             <div className="logo">
-                <img src="./Site logo.png" alt="Site Logo" />
+                <img src="./pitIT3.png" alt="Site Logo" />
             </div>
             <div className="search-bar">
                 <input type="text" className="search-input" />
@@ -26,7 +26,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link>
+                        <Link to={"/landing"}>
                             Pricing
                         </Link>
                     </li>
@@ -53,7 +53,7 @@ const Navbar = () => {
                 }
             </div>
         </div>
-        <div className="welcome">
+        {/* <div className="welcome">
             <div className="welcome-text">
                 <h3>
                     Welcome
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </p>
             </div>
             <p>Explore, download and upload pictures for free</p>
-        </div>
+        </div> */}
     </nav>
 }
 
