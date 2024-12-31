@@ -18,15 +18,15 @@ function App() {
         <Routes>
           <Route exact path="/" element={
             <React.Fragment>
-              <Pictures />
-              <Form />
+              <Landing />
+              {/* <Form /> */}
             </React.Fragment>
           } />
 
           {/* <Login /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<UserProfile />} />
-          <Route path="/landing" element={<Landing />} />
+          <Route path="/explore" element={<Pictures />} />
 
         </Routes>
         <Footer />

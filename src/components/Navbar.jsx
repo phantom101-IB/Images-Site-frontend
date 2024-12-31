@@ -26,12 +26,12 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to={"/landing"}>
+                        <Link >
                             Pricing
                         </Link>
                     </li>
                     <li>
-                        <Link>
+                        <Link to={"/explore"}>
                             Explore
                         </Link>
                     </li>

@@ -114,6 +114,7 @@
 .nav-buttons li > * {
     font-size: 1.1rem;
     color: var(--color1);
+    transition: all 0.35s;
 }
 
 .nav-buttons li > *:hover {
@@ -522,6 +523,7 @@
     /* border: 2px solid red; */
     /* background: var(--color5); */
     background: url("/white_kitten.webp") center center/cover;
+    background-repeat: no-repeat;
 }
 
 .login-control-div {
