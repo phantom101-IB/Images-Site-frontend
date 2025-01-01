@@ -34,7 +34,7 @@
     /* background: url("./Luffy.jpg") center center/cover; */
     color: rgb(255, 255, 255);
     /* box-shadow: inset 0px 50px 150px #000; */
-    backdrop-filter: blur(30px);
+    backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.15);
     position: fixed;
     z-index: 2;
@@ -167,7 +167,9 @@
 /* Pictures body */
 .Pictures-main {
     text-align: center;
-    padding: 0 10%;
+    padding: 80px 10%;
+    min-height: calc(100vh - 8vh);
+    /* margin-top: 80px; */
 }
 
 .pic-text-div {
@@ -522,7 +524,7 @@
     height: calc(100vh - 8vh);
     /* border: 2px solid red; */
     /* background: var(--color5); */
-    background: url("/white_kitten.webp") center center/cover;
+    background: url("/puppie6.jpg") center center/cover;
     background-repeat: no-repeat;
 }
 
@@ -534,8 +536,8 @@
     align-items: center;
     overflow: hidden;
     position: relative;
-    border: 1px solid rebeccapurple;
-    backdrop-filter: blur(10px);
+    border: 1px solid var(--color5);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     transition: all 0.35s linear;
 }
@@ -574,7 +576,7 @@
 }
 
 .login-form div label {
-    color: var(--color4);
+    color: var(--color1);
     font-weight: 700;
 }
 
