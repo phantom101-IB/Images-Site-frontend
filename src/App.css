@@ -599,3 +599,96 @@
 .sign-up-form.true {
     left: 0;
 }
+
+/* User Profile */
+
+.main_profile {
+    padding-top: 80px;
+}
+
+.profile_control {
+    border: 2px solid var(--color4);
+    height: calc(100vh - 8vh - 80px);
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user_photos {
+    height: 100%;
+    width: 75%;
+    /* border: 1px solid var(--color5); */
+    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.8);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.user_profile {
+    height: 100%;
+    width: 20%;
+    border: 1px solid var(--color6);
+}
+
+.user_profile_ctrl {
+    height: 100%;
+    padding: 20px;
+}
+
+.user_profile_pic {
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.pro_pic-div {
+    /* border: 1px solid var(--color5); */
+    width: 80%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 8px;
+}
+
+.pro_pic-div img {
+    aspect-ratio: 1/1;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.user_followers {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 15px;
+    /* gap: 10px; */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.upload_class {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.upload_btn {
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    background: var(--color5);
+    color: var(--color2);
+    cursor: pointer;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
