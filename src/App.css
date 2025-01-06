@@ -16,6 +16,7 @@
     --color4: #595959; /* For primary text and headers.*/
     --color5: #ff6f61; /* For accents, buttons, or links to add a vibrant contrast.*/
     --color6: #b23895; /* For accents, buttons, or links to add a vibrant contrast.*/
+    --color7: #050036; /* For accents, buttons, or links to add a vibrant contrast.*/
 }
 
 @font-face {
@@ -607,7 +608,7 @@
 }
 
 .profile_control {
-    border: 2px solid var(--color4);
+    /* border: 2px solid var(--color4); */
     height: calc(100vh - 8vh - 80px);
     padding: 2px;
     display: flex;
@@ -627,7 +628,7 @@
 .user_profile {
     height: 100%;
     width: 20%;
-    border: 1px solid var(--color6);
+    /* border: 1px solid var(--color6); */
 }
 
 .user_profile_ctrl {
@@ -675,6 +676,9 @@
 .upload_class {
     width: 100%;
     margin-top: 20px;
+    height: 60%;
+    position: relative;
+    overflow: hidden;
 }
 
 .upload_btn {
@@ -691,4 +695,89 @@
     gap: 20px;
     justify-content: center;
     align-items: center;
+    transition: all 0.35s ease;
+}
+
+.upload_btn:hover {
+    background-color: var(--color3);
+    color: var(--color7);
+}
+
+/* Upload form styling */
+
+.up_check {
+    visibility: hidden;
+}
+
+.up_check:checked ~ .img-upload-form-div {
+    transform: translateX(0);
+}
+
+.img-upload-form-div {
+    width: 100%;
+    height: 60%;
+    /* border: 1px solid var(--color7); */
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    transform: translateX(100%);
+    transition: all 0.35s linear;
+}
+
+.img-upload-form-div input {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0px 10px;
+    /* border: 1px solid var(--color7); */
+    margin-top: 10px;
+    outline: none;
+}
+
+.img-upload-form-div input:first-child {
+    border: 1px solid var(--color4);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.img-upload-form-div input:first-child::placeholder {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.img-upload-form-div input:nth-child(3) {
+    border-radius: 0px;
+    /* background: var(--color6); */
+}
+
+.img-upload-form-div input:last-child {
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    background: var(--color7);
+    color: var(--color1);
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.img-upload-form-div input:last-child:hover {
+    background: var(--color3);
+    color: var(--color7);
+}
+
+.close_up_form {
+    background: none;
+    font-size: 1.5rem;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    transition: all 0.35s linear;
+}
+
+.close_up_form:hover {
+    color: var(--color5);
 }

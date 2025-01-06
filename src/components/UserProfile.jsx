@@ -1,6 +1,12 @@
 import { FaUpload } from "react-icons/fa"
+import Form from './Form'
+import { useState } from "react"
+import { useGlobalContext } from "./context"
 
 const UserProfile = () => {
+    const { check, setCheck } = useGlobalContext()
+    const [userPhotos, setUserPhotos] = useState([])
+
     return <section className="main_profile">
         <div className="profile_control">
             <div className="user_photos"></div>
@@ -17,8 +23,11 @@ const UserProfile = () => {
                         </div>
                     </div>
                     <div className="upload_class">
-                        <button className="upload_btn">Upload <FaUpload /> </button>
-
+                        <button className="upload_btn" onClick={() => setCheck(!check)}>Upload <FaUpload /> </button>
+                        {
+                            check && <input type="checkbox" className="up_check" checked />
+                        }
+                        <Form />
                     </div>
                 </div>
             </div>
