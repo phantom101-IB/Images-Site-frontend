@@ -51,10 +51,11 @@ const Login = () => {
 
     }
 
-    const { name, token } = data
+    const { name, token, id } = data
     if (name && token) {
         localStorage.setItem("token", JSON.stringify(token))
         localStorage.setItem("name", JSON.stringify(name))
+        localStorage.setItem("id", JSON.stringify(id))
     }
 
     return <div className="login-main-div">
