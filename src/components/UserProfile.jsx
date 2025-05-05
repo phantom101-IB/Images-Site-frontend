@@ -4,6 +4,8 @@ import { useState, useEffect } from "react"
 import { useGlobalContext } from "./context"
 
 
+
+
 const UserProfile = () => {
     const { check, setCheck } = useGlobalContext()
     const user1 = JSON.parse(localStorage.getItem("id"))

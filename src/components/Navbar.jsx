@@ -35,7 +35,11 @@ const Navbar = () => {
                             Explore
                         </Link>
                     </li>
-                    {token ? <li onClick={() => { localStorage.clear() }}>
+                    {token ? <li onClick={() => {
+                        localStorage.clear()
+                        window.location.href = "/"
+                        // location.reload()
+                    }}>
                         Logout
                     </li> : <li>
                         <Link to={"/login"}>

@@ -628,7 +628,7 @@
 
 .profile_control {
     /* border: 2px solid var(--color4); */
-    height: calc(100vh - 8vh - 80px);
+    /* height: calc(100vh - 8vh - 80px); */
     padding: 2px;
     display: flex;
     justify-content: center;
@@ -639,7 +639,7 @@
     height: 100%;
     width: 75%;
     /* border: 1px solid var(--color5); */
-    box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.8);
+    /* box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.8); */
     overflow-y: scroll;
     scrollbar-width: none;
     /* display: grid;
@@ -699,7 +699,7 @@
 .upload_class {
     width: 100%;
     margin-top: 20px;
-    height: 60%;
+    height: 350px;
     position: relative;
     overflow: hidden;
 }
@@ -803,4 +803,19 @@
 
 .close_up_form:hover {
     color: var(--color5);
+}
+
+/* Loading animation div styles */
+
+.img_submit_loader,
+.login_loader_div {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    backdrop-filter: blur(20px);
+    padding: 10px;
+    z-index: 20;
 }
