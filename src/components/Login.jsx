@@ -71,7 +71,6 @@ const Login = () => {
                 setLoginLoader(!loginLoader)
 
                 if (!data.msgS) {
-
                     location.href = "/"
                 }
 

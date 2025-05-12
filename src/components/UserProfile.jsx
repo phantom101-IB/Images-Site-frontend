@@ -33,6 +33,11 @@ const UserProfile = () => {
         <div className="profile_control">
             <div className="user_photos">
                 {
+                    !userPhotos && <div>
+                        <p style={{ textAlign: "center", width: "100%", fontStyle: "italic", fontWeight: "bold" }}>No Pictures available</p>
+                    </div>
+                }
+                {
                     userPhotos && userPhotos.map((item, index) => {
                         const { path, name } = item
                         const apath = path.split(" ")[1]
