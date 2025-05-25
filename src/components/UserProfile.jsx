@@ -47,7 +47,7 @@ const UserProfile = () => {
                         const apath = path.split(" ")[1]
                         return <div className="pic-relative" key={index}>
                             <div className="pic-source">
-                                <img key={index} src={`${picuri}/${path}`} alt={name} />
+                                <img key={index} src={`${picuri}/${apath}`} alt={name} />
                             </div>
                             <div className="pic-buttons">
                                 <div className="pic-name">
