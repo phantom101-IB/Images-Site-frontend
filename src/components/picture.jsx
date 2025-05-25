@@ -40,7 +40,7 @@ const Pictures = () => {
                     const { path, name } = item
                     return <div className="pic-relative" key={index}>
                         <div className="pic-source">
-                            <img key={index} src={`${url}/${path}`} alt={name} />
+                            <img key={index} src={`${uri}/${path}`} alt={name} />
                         </div>
                         <div className="pic-buttons">
                             <div className="pic-name">
