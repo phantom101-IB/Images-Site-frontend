@@ -16,7 +16,7 @@ const Form = () => {
 
         const formData = new FormData(e.target)
 
-        fetch(url, {
+        fetch(uri, {
             method: "POST",
             headers: {
                 "Authorization": `Bearer ${JSON.parse(localStorage.getItem("token"))}`
