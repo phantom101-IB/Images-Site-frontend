@@ -2,12 +2,14 @@ import { useEffect } from "react"
 import { useState } from "react"
 import { AiOutlineArrowDown, AiFillHeart, AiOutlineFullscreen } from "react-icons/ai"
 const url = "http://localhost:3000/api/v1/All"
+const dpurl = "https://image-upload-backend-xigj.onrender.com"
+const uri = `${dpurl}/api/v1/All`
 const Pictures = () => {
     const [info, setInfo] = useState([])
 
     useEffect(() => {
         try {
-            fetch(url)
+            fetch(uri)
                 .then(res => res.json())
                 .then(data => {
                     const { photo } = data

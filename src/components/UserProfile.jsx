@@ -7,17 +7,21 @@ import { useGlobalContext } from "./context"
 
 
 const UserProfile = () => {
+    const dpurl = "https://image-upload-backend-xigj.onrender.com"
     const { check, setCheck } = useGlobalContext()
     const user1 = JSON.parse(localStorage.getItem("id"))
 
-
+    // development url
     const url = `http://localhost:3000/api/v1/All/user/${user1}`
     const picurl = "http://localhost:3000/api/v1/All"
+    // production urls
+    const uri = `${dpurl}/api/v1/All/user/${user1}`
+    const picuri = `${dpurl}/api/v1/All`
 
     const [userPhotos, setUserPhotos] = useState([])
     useEffect(() => {
         try {
-            fetch(url)
+            fetch(uri)
                 .then(res => res.json())
                 .then(data => {
                     const { photo } = data

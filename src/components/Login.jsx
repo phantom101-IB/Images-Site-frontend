@@ -2,6 +2,11 @@ import { useState } from "react"
 import { useNavigate } from "react-router-dom"
 const url = "http://localhost:3000/api/v1/auth/login"
 const sign_url = "http://localhost:3000/api/v1/auth/register"
+const dpurl = "https://image-upload-backend-xigj.onrender.com"
+// production urls
+const uri = `${dpurl}/api/v1/auth/login`
+const sing_uri = `${dpurl}/api/v1/auth/register`
+
 import { Riple } from "react-loading-indicators"
 
 
@@ -29,7 +34,7 @@ const Login = () => {
         const entries = new FormData(e.target)
         const data = Object.fromEntries(entries)
 
-        fetch(url, {
+        fetch(uri, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -57,7 +62,7 @@ const Login = () => {
         const entries = new FormData(e.target)
         const data = Object.fromEntries(entries)
 
-        fetch(sign_url, {
+        fetch(sing_uri, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

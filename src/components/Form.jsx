@@ -3,6 +3,8 @@ import { FaXmark } from "react-icons/fa6"
 import { useGlobalContext } from "./context"
 import { OrbitProgress } from "react-loading-indicators"
 import { useState } from "react"
+const dpurl = "https://image-upload-backend-xigj.onrender.com"
+const uri = `${dpurl}/api/v1/photos`
 
 const Form = () => {
     const { check, setCheck } = useGlobalContext()
